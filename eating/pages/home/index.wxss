@@ -1,1 +1,32 @@
 /* pages/home/index.wxss */
+.list_name{
+  display: flex;
+  justify-content:space-between
+}
+.name_bt{
+  margin: 6px 0;
+  font-size: 13px;
+  font-weight: 600;
+ 
+}
+.list{
+  margin: 10px 10px;
+}
+
+.list_tw{
+
+ 
+  display: flex;
+}
+.list_tw image{
+  width: 30%;
+  height: 100px;
+  margin-right: 10px;
+ 
+}
+.list_tw view{
+  width: 68%;
+  flex: 1;
+  font-size: 13px;
+  
+}

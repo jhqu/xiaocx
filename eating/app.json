@@ -52,7 +52,7 @@
     "navigationBarTitleText": "课程学习",
     "navigationBarTextStyle": "black"
   },
-  "entryPagePath":"pages/about/index",
+  "entryPagePath":"pages/home/index",
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
