@@ -1,0 +1,32 @@
+<!--pages/about/index.wxml-->
+<view class="container">
+<image 
+ class="ab_img" 
+ src="/img/bu.png"
+ ></image>
+ <ab-title
+ titel1="公司介绍"
+ descrip="互联网时代+时代" 
+ ></ab-title>
+ <image 
+ class="ab_img1" 
+ src="/img/ab_1.png"
+ mode="aspectFill"
+ ></image>
+ <view class="ab_title">
+ <view class="ab_bt">{{about.introduce}}</view>
+ <view class="ab_ms">{{about.detail}}</view>
+ </view>
+ <ab-title
+ titel1="名师团队"
+ descrip="互联网时代+时代" 
+ ></ab-title>
+ <view class="work_list">
+ <view  wx:for="{{workerData}}" wx:key="index">
+<image mode="widthFix" src="{{baseurl+item.img}}"></image>
+ <view class="work_name">{{item.name}}</view>
+ <view class="work_dscrip">{{item.introduce}}</view>
+ </view>
+ </view>
+ 
+</view>

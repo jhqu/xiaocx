@@ -1,0 +1,13 @@
+<!--componets/titelCom/index.wxml-->
+<view>
+<view class="titel">
+<div class="titel_1">{{titel1}}</div> 
+<div class="titel_2">{{titel2}}</div>
+</view>
+
+<view class="dicript">
+<view  class="dicript_1"> {{descrip}} </view>
+</view>
+
+
+</view>

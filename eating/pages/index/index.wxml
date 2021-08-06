@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="bner_v">
+      <swiper indicator-dots="{{dots}}"
+        autoplay
+        interval="{{5000}}"
+        duration>
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+          <image class="swimg" src="{{baseurl+item.img}}"></image>
+            <view class="swiper-item">{{item.text}}{{index}}</view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <titel-com
+    titel1="{{titel_1.t1}}"
+    titel2="{{titel_1.t2}}"
+    descrip="{{titel_1.ds}}"
+    >
+    </titel-com>
+    <view class="nav_list">
+     <view wx:for="{{background}}">
+     <image src="{{baseurl+item.img}}"></image>
+     <text>{{item.text}}</text>
+     </view>
+    </view>
+    <titel-com
+    titel1="加入"
+    titel2="我们"
+    descrip="{{titel_1.ds}}"
+    >
+    </titel-com>
+    <view class="addusList">
+    <view 
+     wx:for="{{addus}}"
+     wx:key="index" class="addus">
+     <image src="{{baseurl+item.img}}"
+      class="addimg"></image>
+     <view class="addustit">
+    <view>{{item.title}}</view>
+    <text>{{item.text}}</text>
+   </view>
+   </view>
+  </view>
+</view>

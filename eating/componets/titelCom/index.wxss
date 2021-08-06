@@ -1,0 +1,18 @@
+/* componets/titelCom/index.wxss */
+.titel{
+  text-align: center;
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow:2px 2px 2px #aaaaaa;
+}
+.titel_1{
+  margin-right: 10px;
+}
+.titel_2{
+  color:chocolate;
+}
+.dicript{
+  font-size: 14px;
+  color:gray;
+}

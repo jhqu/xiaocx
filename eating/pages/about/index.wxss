@@ -1,0 +1,35 @@
+/* pages/about/index.wxss */
+.ab_img{
+  height: 90px;
+}
+.ab_img1{
+  height: 180px;
+}
+.ab_title{
+  padding: 10px 10px;
+}
+.ab_bt{
+  font-weight: 600;
+}
+.ab_ms{
+  font-size: 12px;
+  color: gray;
+  line-height: 3ch;
+}
+.work_list{
+  padding: 10px 10px;
+}
+.work_list image{
+  width: 100%;
+}
+.work_name{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.work_dscrip{
+  font-size: 12px;
+  color: gray;
+  line-height: 3ch;
+  margin-bottom: 10px;
+}

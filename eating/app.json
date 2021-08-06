@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/about/index",
+    "pages/home/index",
+    "pages/work/index",
+    "pages/personel/index"
+  ],
+  "tabBar": {
+    "custom": true,
+    "color": "#FFFFFF",
+    "selectedColor": "#F60A0A",
+    "backgroundColor": "#EBBCBC",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/1.png",
+        "selectedIconPath": "img/1.png"
+      },
+      {
+        "pagePath": "pages/about/index",
+        "text": "关于我们",
+        "iconPath": "img/2.png",
+        "selectedIconPath": "img/2.png"
+      },
+      {
+        "pagePath": "pages/home/index",
+        "text": "课程中心",
+        "iconPath": "img/3.png",
+        "selectedIconPath": "img/3.png"
+      },
+      {
+        "pagePath": "pages/work/index",
+        "text": "诚聘英才",
+        "iconPath": "img/4.png",
+        "selectedIconPath": "img/4.png"
+      },
+      {
+        "pagePath": "pages/personel/index",
+        "text": "个人中心",
+        "iconPath": "img/5.png",
+        "selectedIconPath": "img/5.png"
+      }
+
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "课程学习",
+    "navigationBarTextStyle": "black"
+  },
+  "entryPagePath":"pages/about/index",
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
