@@ -7,6 +7,7 @@
 
 <view class="dicript">
 <view  class="dicript_1"> {{descrip}} </view>
+<view  class="dicript_1"> {{descrip2}} </view>
 </view>
 
 

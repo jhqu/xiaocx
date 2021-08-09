@@ -27,6 +27,6 @@
 .list_tw view{
   width: 68%;
   flex: 1;
-  font-size: 13px;
+  font-size: 14px;
   
 }

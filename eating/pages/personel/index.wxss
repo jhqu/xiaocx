@@ -1,1 +1,25 @@
 /* pages/personel/index.wxss */
+.text_log{
+  color:orange;  
+  font-weight: 700;
+}
+.text_nolog{
+  margin: 10px 0;
+}
+.list_box{
+  padding: 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.list{
+width: 48%;
+
+
+
+}
+.list image{
+  width: 100%;
+  height: 140px;
+}

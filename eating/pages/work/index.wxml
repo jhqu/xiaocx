@@ -1,2 +1,25 @@
 <!--pages/work/index.wxml-->
-<text>pages/work/index.wxml</text>
+ <view class="container">
+  <image 
+  mode="widthFix"
+ class="ab_img" 
+ src="/img/bu.png"
+ ></image>
+ <ab-title 
+ titel1="诚聘"
+ titel2="英才"
+ descrip="互联网时代+时代" 
+ descrip2="互联网时代+时代" 
+ >
+ </ab-title>
+ <view class="list">
+ <view wx:for="{{worklist}}" wx:key="{{item.id}}" class="list_tw">
+
+  <image mode="widthFix" src="{{baseurl+item.img}}"></image>
+
+ <text>{{item.title}}</text>
+ <view>{{item.text}}</view>
+ </view>
+
+ </view>
+ </view>

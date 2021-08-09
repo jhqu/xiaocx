@@ -6,7 +6,8 @@ Component({
   properties: {
         titel1:String,
         titel2:String,
-        descrip:String
+        descrip:String,
+        descrip2:String
   },
 
   /**

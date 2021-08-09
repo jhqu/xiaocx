@@ -1,1 +1,20 @@
 /* pages/work/index.wxss */
+.ab_img{
+  width: 100%;
+}
+.list{
+margin: 10px 10px;
+text-align: center;
+line-height: 20px;
+color: gray;
+
+}
+.list_tw image{
+  width: 100%;
+}
+.list_tw text{
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+

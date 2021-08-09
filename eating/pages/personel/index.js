@@ -5,14 +5,46 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+      classarr:[[],[],[]],
+      baseurl:'https://www.zhaoxiedu.net'
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let _this = this;
+    wx.request({
+      url: 'https://test.zhaoxiedu.net/api/Resource/GetResourceList/', //仅为示例，并非真实的接口地址
+      data:"",
+      method:"get",
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success (res) {
+        _this.setData({
+      
+          'classarr[0]':res.data.filter(item =>{
+         
+            return item.type == 1;
+          
+          }),
+          'classarr[1]':res.data.filter(item =>{
+         
+            return item.type == 2;
+          
+          }),
+          'classarr[2]':res.data.filter(item =>{
+         
+            return item.type == 3;
+          
+          })
+        })
+        console.log(_this.data.classarr)
+       
+      }
+    })
+    
   },
 
   /**
