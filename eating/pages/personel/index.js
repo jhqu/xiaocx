@@ -9,6 +9,17 @@ Page({
       baseurl:'https://www.zhaoxiedu.net'
   },
 
+  login(e){
+    wx.navigateTo({
+      url: '/pages/login/index',
+      success:function(data){
+        console.log(data)
+      },
+      fail:function(data){
+       console.log(data);
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

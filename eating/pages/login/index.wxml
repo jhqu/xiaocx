@@ -1,0 +1,27 @@
+<!--pages/login/index.wxml-->
+<view class="container">
+  <ab-title titel1="登录" titel2="eating" descrip="vip互联网时代+时代"> </ab-title>
+<mp-form id="form"  models="{{formData}}">
+  <mp-cells>
+    <mp-cell prop="qq" title="QQ" ext-class="">
+      <input bindinput="formInputChange" data-field="qq" class="weui-input" placeholder="请输入qq" />
+    </mp-cell>
+    <mp-cell prop="pswd" title="密码" ext-class=" ">
+      <input password bindinput="formInputChange" data-field="pswd" class="weui-input" placeholder="请输入密码" />
+
+    </mp-cell>
+
+    <mp-cell prop="vcode" title="验证码" ext-class="">
+      <input bindinput="formInputChange" data-field="vcode" class="weui-input" placeholder="请输入验证码" />
+      <image bindtap="setImg" slot="footer" class="weui-vcode-img" src="{{'https://test.zhaoxiedu.net/api/login/CreateValidateCode/?t='+imgValidateCode}}" style="width: 108px;height: 30px;"></image>
+    </mp-cell>
+  </mp-cells>
+
+</mp-form>
+<view class="weui-btn-area" style="width: 100%; margin: 0 10px;">
+            <button class="weui-btn" style="width: 90%;" type="primary" bindtap="submitForm">确定</button>
+        </view>
+        <view class="no_login">
+        <text bindtap="register" >暂无账号，我要注册</text>
+        </view>
+</view>

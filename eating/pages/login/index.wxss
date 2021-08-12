@@ -1,0 +1,23 @@
+/* pages/login/index.wxss */
+.weui-cell__hd{
+ width: 20%;
+}
+.weui-cell__bd{
+ margin-left: 10px;
+}
+
+.weui-cell_wxss{
+  border: 1pt solid #efefef
+}
+.no_login{
+  margin: 5px 0;
+ width: 100%;
+ text-align: right;
+}
+.no_login text{
+  margin-right: 10px;
+  font-size: 14px;
+  color: green;
+  text-decoration: underline
+  
+}

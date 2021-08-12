@@ -3,7 +3,7 @@
   <image mode="widthFix" class="ab_img" src="/img/bu.png"></image>
   <view class="text_nolog">
     <text>你尚未登陆点我 ，</text>
-    <text class="text_log">登陆</text>
+    <text class="text_log" bindtap="login">登陆</text>
   </view>
   <ab-title titel1="vip" titel2="资源下载" descrip="vip互联网时代+时代"> </ab-title>
   <view class="list_box">

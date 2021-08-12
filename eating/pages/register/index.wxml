@@ -1,0 +1,46 @@
+<!--pages/register/index.wxml-->
+<view class="container">
+  <ab-title titel1="注册" titel2="eating" descrip="vip有什么特权还可以看圆没"> </ab-title>
+  <mp-form id="form"  models="{{formData}}">
+  <mp-cells>
+    <mp-cell prop="NickName" title="昵称" ext-class="">
+      <input bindinput="formInputChange" data-field="NickName" class="weui-input" placeholder="请输入昵称" />
+    </mp-cell>
+    <mp-cell prop="qq" title="QQ" ext-class="">
+      <input bindinput="formInputChange" data-field="qq" class="weui-input" placeholder="请输入qq" />
+    </mp-cell>
+    <mp-cell prop="PhoneNum" title="手机号" ext-class=" ">
+      <input password bindinput="formInputChange" data-field="PhoneNum" class="weui-input" placeholder="请输入手机号" />
+
+    </mp-cell>
+    <mp-cell prop="Sex" title="性别" ext-class=" ">
+      <picker range="{{sexArr}}" value="{{formData.Sex}}" bindchange="bindTimeChange">
+    <view class="picker">
+           {{sexArr[formData.Sex]}}
+    </view>
+  </picker>
+
+    </mp-cell>
+    <mp-cell prop="Pwd" title="密码" ext-class=" ">
+      <input password bindinput="formInputChange" data-field="Pwd" class="weui-input" placeholder="请输入密码" />
+
+    </mp-cell>
+    <mp-cell prop="Pwd2" title="密码" ext-class=" ">
+      <input password bindinput="formInputChange" data-field="Pwd2" class="weui-input" placeholder="请再次输入密码" />
+
+    </mp-cell>
+
+    <mp-cell prop="validateString" title="验证码" ext-class="">
+      <input bindinput="formInputChange" data-field="validateString" class="weui-input" placeholder="请输入验证码" />
+      <image bindtap="setImg" slot="footer" class="weui-vcode-img" src="{{'https://test.zhaoxiedu.net/api/login/CreateValidateCode/?t='+imgValidateCode}}" style="width: 108px;height: 30px;"></image>
+    </mp-cell>
+  </mp-cells>
+
+</mp-form>
+<view class="weui-btn-area" style="width: 100%; margin: 0 10px;">
+            <button class="weui-btn" style="width: 90%;" type="primary" bindtap="submitForm">确定</button>
+        </view>
+        <view class="no_login">
+        <text bindtap="register" >暂无账号，我要登录</text>
+        </view>
+</view>

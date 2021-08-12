@@ -5,7 +5,9 @@
     "pages/about/index",
     "pages/home/index",
     "pages/work/index",
-    "pages/personel/index"
+    "pages/personel/index",
+    "pages/login/index",
+    "pages/register/index"
   ],
   "tabBar": {
     "custom": true,
@@ -43,7 +45,6 @@
         "iconPath": "img/5.png",
         "selectedIconPath": "img/5.png"
       }
-
     ]
   },
   "window": {
@@ -52,7 +53,7 @@
     "navigationBarTitleText": "课程学习",
     "navigationBarTextStyle": "black"
   },
-  "entryPagePath":"pages/personel/index",
+  "entryPagePath": "pages/personel/index",
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
