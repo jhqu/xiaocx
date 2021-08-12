@@ -67,10 +67,11 @@ Page({
               title: res.data,
               icon: 'error',
               duration: 2000})
-          }else{
+          }else if(res.statusCode == 200){
+            console.log(res.data)
             wx.setStorage({
               key:'zx',
-              data:'abc'
+              data:res.data
             })
           }
         }

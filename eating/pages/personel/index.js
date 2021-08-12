@@ -6,14 +6,15 @@ Page({
    */
   data: {
       classarr:[[],[],[]],
-      baseurl:'https://www.zhaoxiedu.net'
+      baseurl:'https://www.zhaoxiedu.net',
+      token:''
   },
 
   login(e){
     wx.navigateTo({
       url: '/pages/login/index',
       success:function(data){
-        console.log(data)
+        //console.log(data)
       },
       fail:function(data){
        console.log(data);
@@ -51,7 +52,7 @@ Page({
           
           })
         })
-        console.log(_this.data.classarr)
+        //console.log(_this.data.classarr)
        
       }
     })
@@ -69,11 +70,23 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    if(typeof this.getTabBar=="function" && this.getTabBar()){
+    let _this = this;
+   if(typeof this.getTabBar=="function" && this.getTabBar()){
       this.getTabBar().setData({
         selected: 4,
       })
     }
+    wx.getStorage({
+      key: 'zx',
+      success (res) {
+        //console.log(res.data)
+      _this.setData({
+        token:res.data
+      })
+      console.log(_this.data.token)
+      }
+      })
+   
   },
 
   /**
