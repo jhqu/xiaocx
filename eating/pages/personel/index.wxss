@@ -5,6 +5,7 @@
 }
 .text_nolog{
   margin: 10px 0;
+  text-align: center;
 }
 .list_box{
   padding: 10px 10px;

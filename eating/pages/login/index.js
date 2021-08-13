@@ -59,10 +59,7 @@ Page({
         success (res) {
           console.log(res)
           if(res.statusCode==214){
-            wx.setStorage({
-              key:"zx",
-              data:"abc"
-            })
+           
             wx.showToast({
               title: res.data,
               icon: 'error',
@@ -71,8 +68,14 @@ Page({
             console.log(res.data)
             wx.setStorage({
               key:'zx',
-              data:res.data
-            })
+              data:res.data,
+              success:function(){
+                wx.switchTab({
+                  url: '/pages/personel/index'
+                })
+              }
+             })
+            
           }
         }
 

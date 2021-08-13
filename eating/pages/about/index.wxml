@@ -1,6 +1,7 @@
 <!--pages/about/index.wxml-->
 <view class="container">
 <image 
+ mode="aspectFill"
  class="ab_img" 
  src="/img/bu.png"
  ></image>

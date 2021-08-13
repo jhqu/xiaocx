@@ -1,9 +1,11 @@
 /* pages/about/index.wxss */
 .ab_img{
   height: 90px;
+  width: 100%;
 }
 .ab_img1{
   height: 180px;
+  width: 95%;
 }
 .ab_title{
   padding: 10px 10px;

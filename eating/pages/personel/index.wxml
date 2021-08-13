@@ -1,7 +1,7 @@
 <!--pages/personel/index.wxml-->
 <view class="container">
   <image mode="widthFix" class="ab_img" src="/img/bu.png"></image>
-  <view wx:if="{{!token}}">
+  <view>
   <view class="text_nolog">
     <text>你尚未登陆点我 ，</text>
     <text class="text_log" bindtap="login">登陆</text>
