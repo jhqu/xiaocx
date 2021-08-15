@@ -32,3 +32,9 @@ margin-bottom: 10px;
 .ab_img{
   width: 100%;
 }
+.personel{
+  margin-top: 10px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+ }

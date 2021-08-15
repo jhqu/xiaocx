@@ -1,10 +1,9 @@
-<!--pages/personel/index.wxml-->
+<!--pages/vipCase/index.wxml-->
 <view class="container">
   <image mode="widthFix" class="ab_img" src="/img/bu.png"></image>
-  <view wx:if="{{!token}}">
+
   <view class="text_nolog">
-    <text>你尚未登陆点我 ，</text>
-    <text class="text_log" bindtap="login">登陆</text>
+   
   </view>
   <ab-title titel1="vip" titel2="资源下载" descrip="vip互联网时代+时代"> </ab-title>
   <view class="list_box">
@@ -27,22 +26,4 @@
       <text>{{item.name}}</text>
     </view>
   </view>
-</view>
-<view wx:else class="personel"  >
-           <mp-cell link hover url="/pages/vipCase/index" value="课程资料"  >
-                
-            </mp-cell>
-            <mp-cell link hover url="/pages/info/index" value="个人信息" >
-                
-              </mp-cell>
-              <mp-cell link hover url="/pages/password/index" value="修改密码" >
-                
-              </mp-cell>
-              <mp-cell link hover url="/pages/gywm/index" value="联系我们" >
-                
-              </mp-cell>
-</view>
-<view class="weui-btn-area" style="width: 100%; margin: 20 10px;">
-            <button class="weui-btn" style="width: 90%;" type="primary" bindtap="submitForm">退出登录</button>
-        </view>
 </view>

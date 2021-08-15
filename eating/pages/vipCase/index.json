@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "课程中心",
+  "usingComponents": {
+    "ab-title":"/componets/titelCom"
+    
+  }
+}

@@ -7,7 +7,11 @@
     "pages/work/index",
     "pages/personel/index",
     "pages/login/index",
-    "pages/register/index"
+    "pages/register/index",
+    "pages/vipCase/index",
+    "pages/password/index",
+    "pages/info/index",
+     "pages/gywm/index"
   ],
   "tabBar": {
     "custom": true,

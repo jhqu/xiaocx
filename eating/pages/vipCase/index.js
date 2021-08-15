@@ -1,33 +1,14 @@
-// pages/personel/index.js
+// pages/vipCase/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-      classarr:[[],[],[]],
-      baseurl:'https://www.zhaoxiedu.net',
-      token:'1'
-  },
-  //课程资料
-  vipcase(){
-    wx.navigateTo({
-      url: '/pages/vipCase/index',
-    })
-    console.log("sdfsdf")
+    classarr:[[],[],[]],
+    baseurl:'https://www.zhaoxiedu.net'
   },
 
-  login(e){
-    wx.navigateTo({
-      url: '/pages/login/index',
-      success:function(data){
-        //console.log(data)
-      },
-      fail:function(data){
-       console.log(data);
-      }
-    })
-  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -63,7 +44,6 @@ Page({
        
       }
     })
-    
   },
 
   /**
@@ -77,23 +57,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    let _this = this;
-   if(typeof this.getTabBar=="function" && this.getTabBar()){
-      this.getTabBar().setData({
-        selected: 4,
-      })
-    }
-    wx.getStorage({
-      key: 'zx',
-      success (res) {
-        //console.log(res.data)
-      _this.setData({
-        token:res.data
-      })
-      console.log(_this.data.token)
-      }
-      })
-   
+
   },
 
   /**
